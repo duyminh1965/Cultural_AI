@@ -120,9 +120,9 @@ export const TravelPlanning = () => {
                 <div className="mb-6">
                   <h3 className="text-lg font-semibold text-slate-900 mb-3">Cultural Highlights</h3>
                   <div className="grid grid-cols-2 gap-3">
-                    {(destination.highlights || destination.cultural_highlights || []).map((highlight) => (
+                    {(destination.highlights || destination.cultural_highlights || []).map((highlight: boolean | React.Key | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined> | null | undefined, index: React.Key | null | undefined) => (
                       <div
-                        key={highlight}
+                        key={index}
                         className="bg-teal-50 text-teal-800 px-3 py-2 rounded-lg text-sm font-medium border border-teal-200/50"
                       >
                         {highlight}
@@ -134,7 +134,7 @@ export const TravelPlanning = () => {
                 <div className="mb-6">
                   <h3 className="text-lg font-semibold text-slate-900 mb-3">Top Recommendations</h3>
                   <div className="space-y-3">
-                    {(destination.recommendations || destination.local_recommendations || []).slice(0, 2).map((rec, recIndex) => (
+                    {(destination.recommendations || destination.local_recommendations || []).slice(0, 2).map((rec: { id: React.Key | null | undefined; imageUrl: any; title: any; name: any; description: string | number | bigint | boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | React.ReactPortal | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined> | null | undefined; cultural_match: any; culturalMatch: any; }, recIndex: number) => (
                       <div key={rec.id} className="flex items-start space-x-3 p-3 rounded-lg bg-slate-50/50 border border-slate-200/50">
                         <div className="flex-shrink-0 w-12 h-12 rounded-lg overflow-hidden">
                           <img 
