@@ -43,7 +43,7 @@ export const ProtectedRoute: React.FC<ProtectedRouteProps> = ({
         <div className="text-center">
           <Shield className="h-16 w-16 text-slate-400 mx-auto mb-4" />
           <h2 className="text-2xl font-semibold text-slate-900 mb-2">Access Denied</h2>
-          <p className="text-slate-600">You don't have permission to access this content.</p>
+          <p className="text-slate-600">You don&apos;t have permission to access this content.</p>
         </div>
       </div>
     );
@@ -55,7 +55,7 @@ export const ProtectedRoute: React.FC<ProtectedRouteProps> = ({
         <div className="text-center">
           <Shield className="h-16 w-16 text-slate-400 mx-auto mb-4" />
           <h2 className="text-2xl font-semibold text-slate-900 mb-2">Access Denied</h2>
-          <p className="text-slate-600">You don't have the required role to access this content.</p>
+          <p className="text-slate-600">You don&apos;t have the required role to access this content.</p>
         </div>
       </div>
     );

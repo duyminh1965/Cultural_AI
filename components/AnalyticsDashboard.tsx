@@ -23,11 +23,7 @@ import {
   ResponsiveContainer,
   PieChart,
   Pie,
-  Cell,
-  LineChart,
-  Line,
-  Area,
-  AreaChart
+  Cell
 } from 'recharts';
 import { useAnalyticsMetrics } from '../hooks/useAnalytics';
 
