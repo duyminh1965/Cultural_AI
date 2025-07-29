@@ -126,7 +126,7 @@ export const LiveRecommendations = () => {
                           <Star className="h-3 w-3 text-amber-500 fill-current" />
                           <Brain className="h-3 w-3 text-teal-500" />
                           <span className="text-xs font-semibold text-slate-800">
-                            {Math.round((recommendation.cultural_match || recommendation.culturalMatch) * 100)}% AI
+                            {Math.round((recommendation.culturalMatch) * 100)}% AI
                           </span>
                         </div>
                       </div>
