@@ -14,10 +14,9 @@ export const mockCulturalProfile: CulturalProfile = {
     { from: 'Indie Folk', to: 'Nordic Cuisine', strength: 0.85, domain: 'Music → Cuisine' },
     { from: 'Scandinavian Films', to: 'Copenhagen', strength: 0.92, domain: 'Film → Travel' },
     { from: 'Sustainable Fashion', to: 'Artisanal Markets', strength: 0.78, domain: 'Fashion → Shopping' },
-    { from: 'Nature Documentaries', to: 'Scottish Highlands', strength: 0.88, domain: 'Film → Travel' },
+    { from: 'Nature Documentaries', to: 'Scottish Highlands', strength: 0.88, domain: 'Film → Travel' }
   ],
-  tasteData:
-  [
+  tasteData: [
     { name: 'Nordic Culture', value: 35, color: '#0ea5e9' },
     { name: 'Indie Arts', value: 28, color: '#e8b932' },
     { name: 'Sustainable Living', value: 22, color: '#7f8859' },
@@ -25,6 +24,9 @@ export const mockCulturalProfile: CulturalProfile = {
   ],
   personalityTraits: ['Authentic', 'Contemplative', 'Nature-loving', 'Quality-focused'],
   culturalAffinities: ['Nordic Culture', 'Celtic Heritage', 'Artisan Communities', 'Sustainable Living'],
+  userId: '',
+  completedOnboarding: false,
+  lastUpdated: new Date()
 };
 
 export const mockDestinations: Destination[] = [
