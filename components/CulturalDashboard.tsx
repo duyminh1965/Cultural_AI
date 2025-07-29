@@ -1,6 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import React, { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
+import { motion, MotionValue } from 'framer-motion';
 import { Music, Film, Utensils, Shirt, MapPin, TrendingUp } from 'lucide-react';
 import { PieChart, Pie, Cell, ResponsiveContainer, BarChart, Bar, XAxis, YAxis, Tooltip } from 'recharts';
 import { mockCulturalProfile } from '../data/mockData';
@@ -93,9 +94,9 @@ export const CulturalDashboard = () => {
                       </h3>
                     </div>
                     <div className="space-y-2">
-                      {items.map((item, index) => (
+                      {items.map((item: boolean | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | Promise<string | number | bigint | boolean | React.ReactPortal | React.ReactElement<unknown, string | React.JSXElementConstructor<any>> | Iterable<React.ReactNode> | null | undefined> | React.Key | MotionValue<number> | MotionValue<string> | null | undefined, index: number) => (
                         <motion.div
-                          key={item}
+                          key={index}
                           initial={{ opacity: 0, x: -10 }}
                           animate={{ opacity: 1, x: 0 }}
                           transition={{ delay: 0.3 + index * 0.05 }}
